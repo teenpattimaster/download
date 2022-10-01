@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: rgb(19,4,36);
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(19,4,36);
+}
+.main .content{
+    position: relative;
+    width: 700px;
+}
+.main .content .bg{
+    width: 100% !important;
+    height: auto;
+}
+.main .content #bg_2{
+    margin-top: -140px;
+    z-index: 100 !important;
+}
+
+/* comment part */
+.comments_box{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -38em;
+}
+.comments_box img:nth-child(1),.comments_box img:nth-child(3){
+    height: 150px;
+}
+.comments_box img:nth-child(2){
+    margin: 0 18px;
+    height: 180px;
+} 
+
+.notice_box{
+    width: 100%;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #ffffff;
+}
+.notice_box p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* footer part */
+.content .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+.content .footer_content{
+    width: 700px;
+    height: 160px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+}
+.content .footer_content #icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.content .footer_content .app_data{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.content .footer_content .control_box{
+    display: flex;
+}
+
+.content .footer_content .app_data h3{
+    color: #FFEE06;
+    font-style: italic;
+    font-size: 1.2em;
+}
+.content .footer_content .app_data p{
+    margin-top: 8px;
+    color: #FFFFFF;
+    font-style: italic;
+    line-height: 18px;
+    font-size: 0.8em;
+}
+
+.content .footer_content #install_btn{
+    width: 180px;
+    height: 55px;
+    margin-left: 20px;
+}
+
+@media (max-width: 700px) {
+    .main .content{
+        width: 100%;
+    }
+    .content .footer_content{
+        width: 100%;
+    }
+    .comments_box{
+        margin-top: -36em;
+    }
+    .comments_box img:nth-child(2){
+        height: 150px;
+    }
+    .comments_box img:nth-child(1),.comments_box img:nth-child(3){
+        height: 120px;
+    }
+}
+
+@media (max-width: 650px) {
+    .comments_box{
+        margin-top: -34em;
+    }
+    .main .content #bg_2{
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 600px) {
+    .comments_box{
+        margin-top: -32em;
+    }
+    .notice_box{
+        display: none;
+    }
+    .content .footer_content .app_data h3{
+        font-size: 1em;
+    }
+    .content .footer_content #install_btn{
+      width: 160px;
+    }
+}
+
+@media (max-width: 550px) {
+    .comments_box{
+        margin-top: -28em;
+    }
+}
+@media (max-width: 500px) {
+    .comments_box{
+        margin-top: -26em;
+    }
+    .comments_box img:nth-child(2){
+        height: 120px;
+    }
+    .comments_box img:nth-child(1),.comments_box img:nth-child(3){
+        height: 90px;
+    }
+    .content .footer_content .control_box{
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    .content .footer_content #install_btn{
+        width: 140px;
+        height: 45px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .comments_box{
+        margin-top: -23em;
+    }
+    .main .content #bg_2{
+        margin-top: -90px;
+    }
+}
+@media (max-width: 400px) {
+    .comments_box{
+        margin-top: -20em;
+    }
+    .comments_box img:nth-child(2){
+        height: 100px;
+    }
+    .comments_box img:nth-child(1),.comments_box img:nth-child(3){
+        height: 70px;
+    }
+}
+
+@media (max-width: 350px) {
+    .comments_box{
+        margin-top: -17em;
+    }
+    .comments_box img:nth-child(2){
+        height: 80px;
+    }
+    .comments_box img:nth-child(1),.comments_box img:nth-child(3){
+        height: 50px;
+    }
+    .content .footer_content #install_btn{
+        width: 135px;
+        height: 40px;
+    }
+}
+@media (max-width: 300px) {
+    .comments_box{
+        margin-top: -14em;
+    }
+    .comments_box img:nth-child(2){
+        height: 60px;
+    }
+    .comments_box img:nth-child(1),.comments_box img:nth-child(3){
+        height: 40px;
+    }
+}
